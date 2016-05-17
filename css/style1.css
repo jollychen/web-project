@@ -1,0 +1,103 @@
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.middle {
+    margin: 0 auto;
+}
+
+.center {
+    vertical-align: middle;
+}
+
+
+.relative {
+    position: relative;
+}
+
+.clear:before,
+.clear:after {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/*ul,
+ul li {
+    display: inline-block;
+}*/
+
+
+/******************************************************************************/
+
+
+.wrap{
+	width: 100%;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    width: 100px;
+    height: 100%;
+	z-index: 10;
+}
+
+.wholebook{
+	/*z-index: 0;*/
+	position: relative;
+    width: 100%;
+    height: auto;
+	min-width: 1300px;
+	min-height: 700px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.book-img{
+    position: absolute;
+    top:0;
+    left: 50px;
+    z-index: 9;
+	width: 100%;
+	height: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url("../images/book.png");
+    background-size: contain;
+    display: block;
+}
+
+.content-wrap{
+    margin-top: 60px;
+}
+
+.content{
+    margin-left: 136px;
+}
