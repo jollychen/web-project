@@ -7,10 +7,6 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="css/font.css" type="text/css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <!--<script type="text/javascript" src="js/hover.js"></script>-->
-    <!--<script type="text/javascript" src="js/pop.js"></script>-->
-    <script type="text/javascript" src="js/page.js"></script>
 
 </head>
 <body>
@@ -55,12 +51,22 @@
                                 <p><strong>Contact Me:</strong><p>
                                 <p>If you have any questions or suggestion about this website, please leave comments below. I'll reply you as soon as possible. </p>
                                 <div class="form">
-                                    <form method="get" action="http://deco1800.uqcloud.net/formsubmit.php" id="userForm">
+                                    <form method="get" action="#" id="userForm">
 
-                                        <p><label for="name">Your Name: </label><input type="text" name="name" placeholder="Alice" id="name" /></p>
-                                        <p><label for="email">Your Email: </label><input type="email" name="email" placeholder="Alice123@gmail.com" id="email" /></p>
-                                        <textarea name="comment" placeholder="Enter text here"></textarea>
-                                        <p class="button"><input type="reset" value=" Cancel "/> <input type="submit" value=" Submit "/></p>
+                                        <p>
+                                            <label for="name">Your Name: </label>
+                                            <input required="required" type="text" name="name" placeholder="Alice" id="name" />
+                                        </p>
+                                        <p>
+                                            <label for="email">Your Email: </label>
+                                            <input required="required" type="email" name="email" placeholder="Alice123@gmail.com" id="email" />
+                                        </p>
+                                        <div class="feedback">
+                                            <img class="disappear" src="images/tick.png" alt="right">
+                                            <img class="disappear" src="images/cross.png" alt="error">
+                                        </div>
+                                        <textarea required="required" name="comment" placeholder="Enter text here"></textarea>
+                                        <p class="button"><input class="pointer" type="reset" value=" Cancel "/> <input class="pointer" type="submit" value=" Submit "/></p>
                                     </form>
                                 </div>
                             </div>
@@ -108,9 +114,11 @@
                     <div class="turnPage next">Next</div>
                 </div>
             </div>
-            <div class="placeholder"></div>
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/validate.js"></script>
 </body>
 </html>
