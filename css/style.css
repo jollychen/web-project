@@ -19,14 +19,16 @@
 body{
     background-image: url("../images/background-image.png");
     background-repeat: no-repeat;
-
-
+    background-position: center top;
+    background-size: cover;
+    min-width: 1500px;
 }
 
 .wrap {
     position: relative;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 80px;
     width: 1500px;
     height: auto;
 
@@ -43,8 +45,7 @@ body{
 #bookImage {
     position: relative;
     width:1420px;
-    height: 1000px;
-    min-height: 900px;
+    min-height: 800px;
     min-width: 1400px;
     background-repeat: no-repeat;
     background-position: center top;
@@ -238,7 +239,7 @@ form textarea{
     margin-left:20%;
 }
 
-.button input{
+.button input {
     display:inline-block;
     width: 100px;
     height:40px;
@@ -246,16 +247,12 @@ form textarea{
     border:3px dotted #663333;
 }
 
-
-.placeholder {
-    height: 500px;
-    width:100%;
-}
-
-audio{
+audio {
     display:block;
     color: transparent;
 }
 
+.audio {
+}
 
 
