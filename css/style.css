@@ -1,87 +1,261 @@
-@media screen{
-	body{
-		font-family: 'Alice', serif;
-		color:#644444;
-		
-	}
+.clear:before,
+.clear:after {
+    clear: both;
+    display: table;
+    content: '';
+}
 
-	ul{
-		margin:0;
-	}
+.relative {
+    position: relative;
+}
 
-	/*setting the navigation*/
-	nav img{
-		float:left;
-		display:inline-block;
-		width:190px;
-		height:68px;
-		padding:6px;
-		margin-left: 150px;
-		margin-right: 300px;
-	}
+.left {
+    float: left;
+}
 
-	nav ul li{
-		display:inline;
-		float:left;
-		list-style-type:none;
-		font-size:30px;
-	}
+.right {
+    float: right;
+}
+body{
+    background-image: url("../images/background-image.png");
+    background-repeat: no-repeat;
 
-	nav{
-		width:100%;
-		height:80px;
-		background-color:#073835;
-		/*****************background-image:url(images/pattern.png);
-		background-repeat: repeat-x;*/
-	}
-	nav a,a:link{
-		display:inline-block;
-		color:#f39a9a; 
-		text-decoration: none;
-		transition: all 0.5s linear 0;
-		padding-top:20px;
-		padding-bottom:20px;
-		padding-left:60px;
-		padding-right:60px;
-		text-align:center;
-	}
-
-	nav a:hover,nav a:focus{
-		background-color: #042422;
-		transition: all 0.5s linear 0;
-	}
-
-	/*setting the heading*/
-	h1{
-		text-align: center;
-	}
-
-	/*setting images size and position*/
-	#gardener1{
-		
-		position:absolute;
-		left:6%;
-		top:140%;
-		width:330px;
-	}
-
-	#gardener2{
-		float :left;
-		position:absolute;
-		left:78%;
-		top:135%;
-		width:350px;
-	}
-	#queen{
-		position:absolute;
-		top:203%;
-	}
-
-	#look{
-		position:absolute;
-		top:330%;
-		left:2%;
-		width:1800px;
-	}
 
 }
+
+.wrap {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1500px;
+    height: auto;
+
+}
+
+.container {
+    position: relative;
+    margin-top: 100px;
+    width:100%;
+    height: auto;
+
+}
+
+#bookImage {
+    position: relative;
+    width:1420px;
+    height: 1000px;
+    min-height: 900px;
+    min-width: 1400px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url("../images/book.png");
+    background-size: contain;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav {
+    display: block;
+    position: absolute;
+    top: 50px;
+    z-index: 100;
+
+}
+
+.nav {
+    position: absolute;
+    left:-50px;
+    padding-top: 12px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.longMark {
+    background-image: url("../images/bookmark1.png");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    width: 230px;
+    height: 80px;
+}
+
+.shortMark {
+    background-image: url("../images/bookmark1.png");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    width: 180px;
+    height: 80px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.shortMark:hover {
+    width:192px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.nav:hover {
+    left: -64px;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.nav1 {
+    margin-top:20px;
+}
+
+.nav2 {
+    margin-top: 120px;
+}
+
+.nav3 {
+    margin-top: 220px;
+}
+
+nav ul li div {
+    font-size: 1.8em;
+    font-family:'Alex Brush', cursive;
+    font-weight: bolder;
+}
+
+nav ul li div span {
+    margin-left: 64px;
+    vertical-align: middle;
+}
+
+nav ul li a{
+    width:230px;
+    height:80px;
+}
+
+a, a:link{
+    text-decoration:none;
+    color: #781200;
+}
+
+a:visited{
+    color:#4a1800;
+}
+.contentWrap {
+    position: relative;
+    width:80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentContainer {
+    width:100%;
+    height: 680px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.page {
+    position: absolute;
+    display: none;
+}
+
+.page:before,
+.page:after {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.contentColumn {
+    width:45%;
+    z-index: 100;
+}
+
+.turnPage {
+
+    z-index: 100;
+    color: darkred;
+    cursor: pointer;
+
+}
+
+#previous {
+    position: absolute;
+    top: 700px;
+    left: -50px;
+}
+
+#next {
+    position: absolute;
+    top: 700px;
+    right:-50px;
+}
+
+.active {
+    display: block;
+}
+
+/*change the "Click Me" tag size*/
+#clickTag{
+    width:70%;
+    height:auto;
+    margin-left:72px;
+    margin-right: auto;
+
+}
+
+
+/*change the portrait size and position*/
+#me{
+    width:75%;
+    height:auto;
+    margin-left:48px;
+    margin-right: auto;
+
+}
+
+
+/*set form's style*/
+
+
+
+form textarea{
+    width:400px;
+    height: 150px;
+    border:3px dotted #663333;
+    margin-left: 50px;
+    background-color: transparent;
+
+}
+
+.form p:last-child {
+    margin-left:20%;
+}
+
+.button input{
+    display:inline-block;
+    width: 100px;
+    height:40px;
+    margin:5px;
+    border:3px dotted #663333;
+}
+
+
+.placeholder {
+    height: 500px;
+    width:100%;
+}
+
+audio{
+    display:block;
+    color: transparent;
+}
+
+
+

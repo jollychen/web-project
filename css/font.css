@@ -1,0 +1,102 @@
+body{
+    font-family: 'Alice', Georgia,  serif;
+    color:#330000;
+    font-size: 20px;
+}
+
+/*declare the formatting in order to make text bold or italic*/
+strong{
+    font-weight:bold;
+}
+em{
+    font-style:italic;
+}
+.contentColumn p {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    text-indent: 2.0em;
+    margin-bottom: 1.0em;
+
+}
+
+.contentColumn h1,
+.contentColumn h2{
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+
+}
+
+.contentColumn h1 {
+    font-size: 1.4em;
+    margin-bottom: 0.3em;
+
+
+}
+
+.contentColumn h1:before {
+    content:"\2660";
+
+
+}
+.contentColumn h1:after{
+    content:"\2660";
+}
+
+
+.contentColumn h2 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.chapterEnd{
+    text-align:center;
+
+}
+
+#readMore{
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 36%;
+    margin-bottom: 40px;
+}
+
+/*give smaller font for reference text*/
+.smallerFont p{
+    font-size: 0.9em;
+}
+
+
+.authorInfo{
+    text-align: center;
+}
+
+.form input{
+    font-family:Raleway,'Open Sans',Lato ;
+    font-size: 18px;
+    color: midnightblue;
+    background-color: transparent;
+  }
+
+textarea{
+    font-family:Raleway,'Open Sans',Lato ;
+    font-size: 18px;
+    color: midnightblue;
+}
+
+/*change placeholder color*/
+::-webkit-input-placeholder {
+    color: #644444;
+}
+
+::-webkit-input-placeholder {
+    color: #644444;
+}
+:-moz-placeholder {/* Firefox 18- */
+    color: #644444;
+}
+::-moz-placeholder{/* Firefox 19+ */
+    color: #644444;
+}
+:-ms-input-placeholder {
+    color:#644444;
+}
