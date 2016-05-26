@@ -2,13 +2,20 @@
 // get last reading page from cookie or reset
 function getPage(){
     // if cookie contains a useful page number return it
-    if (readCookiePage() > 0) {
-        return readCookiePage();
-    }else {
-        // if not reset it.
+    try{
+        if (readCookiePage() > 0) {
+            return readCookiePage();
+        }else {
+            // if not reset it.
+            createCookie();
+            return 0;
+        }
+    }
+    catch(err){
         createCookie();
         return 0;
     }
+        
 }
 
 var curPage = getPage(); // set the current page
